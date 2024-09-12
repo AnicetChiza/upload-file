@@ -124,6 +124,23 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.progress-container {
+    width: 50%;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #4caf50;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+}
+
 
 /*--------------------------- /
 # Login page
