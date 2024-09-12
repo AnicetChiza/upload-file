@@ -22,6 +22,131 @@
 
 <body>
 
+    <section class="principal-content">
+        <div class="left-bloc">
+            <div class="logo">
+                <h3>File MG</h3>
+            </div>
+            <div class="profile">
+                <p><img src="asset/images/Anicet.jpg" alt="profile image"></p>
+                <span>Anicet CHIZA</span>
+            </div>
+            <nav>
+                <div>
+                    <i class="bi bi-house"></i>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="active">
+                    <i class="bi bi-folder"></i>
+                    <a href="#">Files</a>
+                </div>
+                <div>
+                    <i class="bi bi-file-earmark-text"></i>
+                    <a href="report.html">Report</a>
+                </div>
+                <div>
+                    <i class="bi bi-gear"></i>
+                    <a href="settings.html">Settings</a>
+                </div>
+                <div>
+                    <form action="">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <button>Logout</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="center-content">
+            <div class="search">
+                <form action="">
+                    <input type="search" placeholder="Search...">
+                </form>
+            </div>
+
+            <div style="margin-top: 30px;" class="file-container">
+                <h3>Last File</h3>
+                <table class="file-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Type</th>
+                            <th>Document Name</th>
+                            <th>Size</th>
+                            <th>Last Edit</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Popup modal -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <h3>Dear user,</h3>
+                <p>Do you want to download this file?</p>
+                <div class="popup-buttons">
+                    <button class="cancel-btn" onclick="closePopup()">Cancel</button>
+                    <button class="delete-btn" onclick="deleteFile()">Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="asset/javascript/main.js"></script>
 </body>
 
 </html>
