@@ -68,7 +68,7 @@
                 <div class="accounts">
                     <div class="google-content">
                         <i class="fab fa-google-drive icon"></i>
-                        <div>
+                        <div class="google">
                             <span>Google drive</span>
                             <a href="#">Open file</a>
                         </div>
@@ -85,7 +85,7 @@
                 <div class="accounts">
                     <div class="google-content">
                         <i class="bi bi-dropbox"></i>
-                        <div>
+                        <div class="google">
                             <span>Drop box</span>
                             <a href="#">Open file</a>
                         </div>
@@ -102,7 +102,7 @@
                 <div class="accounts">
                     <div class="google-content">
                         <i class="bi bi-clouds"></i>
-                        <div>
+                        <div class="google">
                             <span>One drive</span>
                             <a href="#">Open file</a>
                         </div>
@@ -117,9 +117,80 @@
                     </div>
                 </div>
             </div>
+            <div class="upload-container">
+                <div class="drag-drop-area" id="dragDropArea">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="file icon" class="file-icon" id="fileIcon">
+                    <p id="fileText">Move File</p>
+                </div>
+                <input type="file" id="fileInput" class="file-input" hidden>
+                <button class="upload-btn" id="uploadBtn">Upload File</button>
+            </div>
+
+            <div class="file-container">
+                <h2>Last File</h2>
+                <table class="file-table">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Type</th>
+                            <th>Document Name</th>
+                            <th>Size</th>
+                            <th>Last Edit</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" checked></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" checked></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" checked></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Popup modal -->
+            <div id="popup" class="popup-overlay">
+                <div class="popup-content">
+                    <p>Are you sure you want to download or delete this file?</p>
+                    <div class="popup-buttons">
+                        <button class="cancel-btn" onclick="closePopup()">Cancel</button>
+                        <button class="delete-btn" onclick="deleteFile()">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
+
+    <script src="asset/javascript/main.js"></script>
 </body>
 
 </html>
