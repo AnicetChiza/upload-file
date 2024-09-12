@@ -31,7 +31,7 @@ body {
 /-------------------------- */
 
 .left-bloc {
-    width: 20%;
+    width: 25%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,8 @@ body {
 .center-content {
     width: 100%;
     margin-top: 20px;
-    margin-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .search input {
@@ -268,9 +269,9 @@ body {
 /* Icon styling */
 
 .menu-btn {
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
-    color: #333;
+    color: #141b1fda;
 }
 
 
@@ -291,24 +292,26 @@ body {
 
 .popup-content {
     background-color: #fff;
-    padding: 20px;
+    padding: 40px 50px;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .popup-buttons {
     margin-top: 15px;
     display: flex;
-    justify-content: space-around;
+    gap: 8px;
+    -webkit-column-gap: 8px;
 }
 
 .cancel-btn,
 .delete-btn {
-    padding: 10px 15px;
+    width: 100%;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: "Poppins", sans-serif;
 }
 
 .cancel-btn {

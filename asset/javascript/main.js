@@ -28,13 +28,6 @@ function showPopup() {
     document.getElementById("popup").style.display = "flex";
 }
 
-// Fonction pour fermer le popup
 function closePopup() {
     document.getElementById("popup").style.display = "none";
-}
-
-// Fonction pour supprimer un fichier
-function deleteFile() {
-    alert("File deleted!");
-    closePopup(); // Ferme le popup après la suppression
 }
