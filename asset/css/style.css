@@ -115,7 +115,6 @@ body {
 }
 
 .search input {
-    /* width: 100%; */
     border: none;
     padding: 10px 15px;
     border-radius: 25px;
@@ -127,13 +126,13 @@ body {
 .myaccounts {
     display: flex;
     gap: 10px;
-    margin: auto;
     margin-top: 20px;
     -webkit-column-gap: 10px;
 }
 
 .accounts {
-    padding: 15px 25px;
+    width: 100%;
+    padding: 15px 35px;
     background-color: #fff;
     box-shadow: 0px 1px 10px #ededed;
 }
