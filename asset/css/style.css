@@ -124,6 +124,14 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.myaccounts {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    margin-top: 20px;
+    -webkit-column-gap: 10px;
+}
+
 .accounts {
     padding: 15px 25px;
     background-color: #fff;
@@ -155,9 +163,10 @@ body {
 
 .progress-container {
     width: 100%;
+    margin-top: 20px;
     background-color: #f0f0f0;
     border-radius: 25px;
-    padding: 3px;
+    padding: 1px;
 }
 
 .progress-bar {
