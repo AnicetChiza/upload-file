@@ -115,7 +115,7 @@ body {
 }
 
 .search input {
-    width: 100%;
+    /* width: 100%; */
     border: none;
     padding: 10px 15px;
     border-radius: 25px;
@@ -159,6 +159,22 @@ body {
 .accounts .google-content div {
     display: flex;
     flex-direction: column;
+}
+
+.accounts .google-content div a {
+    color: #1964b5;
+    width: fit-content;
+    border-bottom: 1px solid #1964b5;
+}
+
+.accounts .change {
+    display: flex;
+    gap: 5px;
+    color: #a3a3a3;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    -webkit-column-gap: 5px;
 }
 
 .progress-container {
