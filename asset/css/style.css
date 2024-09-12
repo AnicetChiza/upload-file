@@ -388,6 +388,48 @@ body {
 
 
 /*--------------------------- /
+# Settings
+/ ---------------------------*/
+
+.myprofile {}
+
+.profile-content {
+    width: 60%;
+    padding: 20px 30px;
+    box-shadow: 0px 1px 10px #ededed;
+}
+
+.prof {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prof div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.prof div img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.prof a {
+    padding: 10px 15px;
+    color: #141b1fda;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #ededed;
+}
+
+
+/*--------------------------- /
 # Login page
 / ---------------------------*/
 
