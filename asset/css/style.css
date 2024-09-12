@@ -44,6 +44,9 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-top: 5px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
     -webkit-column-gap: 8px;
 }
 
@@ -52,6 +55,23 @@ body {
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.left-bloc nav {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.left-bloc nav div,
+form {
+    display: flex;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.left-bloc nav div a {
+    color: #141b1fda;
 }
 
 
