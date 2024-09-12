@@ -17,9 +17,28 @@ body {
 }
 
 
-/*------------------------------- /
+/*---------------------------/
+#Principal section
+/-------------------------- */
+
+.left-bloc .profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    -webkit-column-gap: 8px;
+}
+
+.left-bloc .profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/*--------------------------- /
 # Login page
-/ -------------------------------*/
+/ ---------------------------*/
 
 .login-section {
     width: 100%;
