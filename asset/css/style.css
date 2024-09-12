@@ -59,14 +59,12 @@ body {
 
 .left-bloc nav {
     margin-top: 5px;
-    padding-top: 10px;
-    border-top: 1px solid #ddd;
 }
 
 .left-bloc nav div {
     display: flex;
     gap: 10px;
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 15px;
     padding: 10px 15px;
     -webkit-column-gap: 10px;
@@ -344,8 +342,9 @@ body {
 .report-content {
     display: flex;
     gap: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
     -webkit-column-gap: 15px;
     justify-content: center;
 }
@@ -354,11 +353,37 @@ body {
     width: 230px;
     height: 230px;
     display: flex;
+    gap: 10px;
+    -webkit-column-gap: 10px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
+    transition-delay: 0.4s;
+    transition: 0.8s ease-in-out;
     box-shadow: 0px 1px 10px #eef3f7;
+}
+
+.report-content div i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #ededed;
+}
+
+.report-content div:hover {
+    color: #fff;
+    transform: scale(1.1);
+    background-color: #1964b5;
+}
+
+.report-content div:hover i {
+    background: unset;
+    box-shadow: none;
 }
 
 
