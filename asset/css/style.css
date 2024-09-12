@@ -71,8 +71,8 @@ body {
     padding: 10px 15px;
     -webkit-column-gap: 10px;
     background-color: #fff;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     box-shadow: 0px 1px 10px #ededed;
 }
 
