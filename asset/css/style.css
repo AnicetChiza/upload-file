@@ -67,12 +67,13 @@ body {
     display: flex;
     gap: 10px;
     margin-top: 5px;
-    -webkit-column-gap: 10px;
-    padding: 10px 15px;
     font-size: 15px;
+    padding: 10px 15px;
+    -webkit-column-gap: 10px;
+    background-color: #fff;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-color: #f3f1f1;
+    box-shadow: 0px 1px 10px #ededed;
 }
 
 .left-bloc nav div a {
@@ -107,6 +108,21 @@ body {
 /*---------------------------/
 #center content
 /-------------------------- */
+
+.center-content {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px #ededed;
+    font-family: "Poppins", sans-serif;
+}
 
 
 /*--------------------------- /
