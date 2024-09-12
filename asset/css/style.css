@@ -428,6 +428,15 @@ body {
     box-shadow: 0px 1px 10px #ededed;
 }
 
+.informations {
+    margin-top: 30px;
+}
+
+.perso-infos {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 
 /*--------------------------- /
 # Login page
