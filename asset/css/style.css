@@ -437,6 +437,14 @@ body {
     grid-template-columns: auto auto;
 }
 
+.perso-infos div {
+    margin-top: 20px;
+}
+
+.perso-infos div span {
+    color: #b1b1b1;
+}
+
 
 /*--------------------------- /
 # Login page
