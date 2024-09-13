@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Files</title>
 
     <!--css-->
     <link rel="stylesheet" href="asset/css/style.css">
@@ -32,13 +32,13 @@
                 <span>Anicet CHIZA</span>
             </div>
             <nav>
-                <div class="active">
-                    <i class="bi bi-house"></i>
-                    <a href="#">Home</a>
-                </div>
                 <div>
+                    <i class="bi bi-house"></i>
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="active">
                     <i class="bi bi-folder"></i>
-                    <a href="files.html">Files</a>
+                    <a href="#">Files</a>
                 </div>
                 <div>
                     <i class="bi bi-file-earmark-text"></i>
@@ -63,69 +63,8 @@
                     <input type="search" placeholder="Search...">
                 </form>
             </div>
-            <div class="myaccounts">
-                <div class="accounts">
-                    <div class="google-content">
-                        <i class="fab fa-google-drive icon"></i>
-                        <div class="google">
-                            <span>Google drive</span>
-                            <a href="#">Open file</a>
-                        </div>
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                    <div class="change">
-                        <i class="bi bi-clock"></i>
-                        <span>Last change:</span>
-                        <span>Sept. 22, 2024</span>
-                    </div>
-                </div>
-                <div class="accounts">
-                    <div class="google-content">
-                        <i class="bi bi-dropbox"></i>
-                        <div class="google">
-                            <span>Drop box</span>
-                            <a href="#">Open file</a>
-                        </div>
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                    <div class="change">
-                        <i class="bi bi-clock"></i>
-                        <span>Last change:</span>
-                        <span>Sept. 22, 2024</span>
-                    </div>
-                </div>
-                <div class="accounts">
-                    <div class="google-content">
-                        <i class="bi bi-clouds"></i>
-                        <div class="google">
-                            <span>One drive</span>
-                            <a href="#">Open file</a>
-                        </div>
-                    </div>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                    </div>
-                    <div class="change">
-                        <i class="bi bi-clock"></i>
-                        <span>Last change:</span>
-                        <span>Sept. 22, 2024</span>
-                    </div>
-                </div>
-            </div>
-            <div class="upload-container">
-                <div class="drag-drop-area" id="dragDropArea">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="file icon" class="file-icon" id="fileIcon">
-                    <p id="fileText">Move File</p>
-                </div>
-                <input type="file" id="fileInput" class="file-input" hidden>
-                <button class="upload-btn" id="uploadBtn">Upload File</button>
-            </div>
 
-            <div class="file-container">
+            <div style="margin-top: 30px;" class="file-container">
                 <h3>Last File</h3>
                 <table class="file-table">
                     <thead>
@@ -169,26 +108,43 @@
                                 <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
                             </td>
                         </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td><i class="bi bi-file-earmark"></i></td>
+                            <td>Last Quarter Statistics</td>
+                            <td>0.7 MB</td>
+                            <td>10 March, 2020</td>
+                            <td>
+                                <i class="bi bi-three-dots-vertical menu-btn" onclick="showPopup()"></i>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
 
-            <!-- Popup modal -->
-            <div id="popup" class="popup-overlay">
-                <div class="popup-content">
-                    <h3>Dear user,</h3>
-                    <p>Do you want to download this file?</p>
-                    <div class="popup-buttons">
-                        <button class="cancel-btn" onclick="closePopup()">Cancel</button>
-                        <button class="delete-btn" onclick="deleteFile()">Download</button>
-                    </div>
+        <!-- Popup modal -->
+        <div id="popup" class="popup-overlay">
+            <div class="popup-content">
+                <h3>Dear user,</h3>
+                <p>Do you want to download this file?</p>
+                <div class="popup-buttons">
+                    <button class="cancel-btn" onclick="closePopup()">Cancel</button>
+                    <button class="delete-btn" onclick="deleteFile()">Delete</button>
                 </div>
             </div>
-
-
         </div>
     </section>
-
 
     <script src="asset/javascript/main.js"></script>
 </body>
